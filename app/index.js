@@ -15,6 +15,7 @@ app.set("views", __dirname);
 app.set("view engine", "jade");
 
 if(!config.production){
+  console.log("Not in production, setting static files to be served");
   app.use(express.static(www));
 }
 

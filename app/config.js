@@ -1,5 +1,8 @@
-const PRODUCTION = process.env.NODE_ENV === "production";
-const config = {};
+const production = process.env.NODE_ENV === "production";
+
+const config = {
+  production: production
+};
 
 config.express ={
   port: process.env.PORT  || 3009,
