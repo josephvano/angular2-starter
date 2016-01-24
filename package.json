@@ -4,8 +4,8 @@
   "description": "This is just a simple repository to show how to get started with angular2 + gulp + webpack",
   "main": "index.js",
   "scripts": {
-    "start": "node ./app/server.js",
-    "pack": "webpack --colors --progress"
+    "start": "webpack --colors --progress && node ./app/server.js",
+    "pack": "webpack --colors --progress --watch"
   },
   "repository": {
     "type": "git",

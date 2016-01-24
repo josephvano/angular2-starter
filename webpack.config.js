@@ -2,7 +2,6 @@ var path      = require("path");
 var webpack   = require("webpack");
 
 module.exports = {
-  watch: true,
   devtool: "source-map",
   entry: {
     app : "./app/client/main.ts",
