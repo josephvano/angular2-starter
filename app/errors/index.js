@@ -21,5 +21,5 @@ function generalError(err, req, res, next){
 export default function(app){
   app.use(notFound);
   app.use(generalError);
-};
+}
 
