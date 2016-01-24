@@ -1,0 +1,10 @@
+{
+  "verbose": false,
+  "watch": [
+    "wwwroot",
+    "app"
+  ],
+  "ignore": [ 
+    "node_modules"
+  ]
+}
