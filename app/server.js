@@ -9,7 +9,7 @@ const config = require("./config");
 const port = config.express.port;
 const ip  = config.express.ip;
 
-console.info("Starting app.");
+console.info("Starting application.");
 
 app.listen(port, ip, (err) => {
 
@@ -18,5 +18,5 @@ app.listen(port, ip, (err) => {
     process.exit(10);
   }
 
-  console.info(`express is listening on ${ip}:${port}`);
+  console.info(`Express is listening on ${ip}:${port}`);
 });

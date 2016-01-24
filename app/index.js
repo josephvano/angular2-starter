@@ -23,14 +23,17 @@ app.use(bodyParser.urlencoded( { extended: false } ));
 app.use(cookieParser());
 
 if(!config.production){
-  console.log("Not in production, setting static files to be served");
+  console.info("Running in development mode.");
+  console.log("Setting static files to be served.");
   app.use(express.static(www));
+} else {
+  console.info("Running in production mode.");
 }
 
 // Routers
 routes(app);
 
 // Error handlers
-errors(app);
+errors(app, config);
 
 export default app
