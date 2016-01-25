@@ -7,6 +7,7 @@ import routes       from "./routes";
 import bodyParser   from "body-parser";
 import cookieParser from "cookie-parser";
 import favicon      from "serve-favicon";
+import session      from "express-session";
 
 let app = express();
 const www = path.resolve(__dirname, "../", "wwwroot");
@@ -14,6 +15,13 @@ const www = path.resolve(__dirname, "../", "wwwroot");
 // view setup
 app.set("views", __dirname);
 app.set("view engine", "jade");
+
+app.use(session({
+  secret: 'ldlkfjadlf akldjfkl',
+  resave: false,
+  saveUninitialized: true,
+  cookie: { secret: true }
+}));
 
 // middleware
 app.use(morgan("combined"));
