@@ -1,5 +1,5 @@
-import { Component } from "angular2/core"
-import { HeaderComponent } from "../header/header"
+import { Component } from "angular2/core";
+import { HeaderComponent } from "../header/header";
 
 @Component({
   selector: 'app',

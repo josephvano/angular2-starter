@@ -14,11 +14,21 @@ module.exports = {
   },
 
   plugins: [
-    new webpack.optimize.CommonsChunkPlugin("vendor", "vendor.bundle.js")
+    new webpack.optimize.CommonsChunkPlugin("vendor", "vendor.bundle.js"),
+    new webpack.ProvidePlugin({
+      jQuery: "jquery",
+      $: "jquery",
+      "window.jQuery": "jquery"
+    })
   ],
 
   module: {
     loaders: [
+      {
+        test: /\.css$/,
+        exclude: /node_modules/,
+        loader: "style-loader!css-loader"
+      },
       {
         test: /\.ts$/,
         exclude: /node_modules/,
