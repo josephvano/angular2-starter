@@ -31,3 +31,12 @@ To run the bundler in watch mode, run the following command
 ```
 
 This places the webpack in watch mode
+
+### Typings
+
+Have to install typings globally and install type references for TypeScript not to complain about 3rd party libs
+
+```
+  npm install --global typings
+  typings install node --save --ambient
+```

@@ -1,24 +1,24 @@
 // Polyfills
+import "rxjs/add/operator/map";
 import "es6-shim"
 
 import "es6-promise"
 
-import "zone.js/lib/browser/zone-microtask"
 
 import "reflect-metadata"
 
+
 if("production" === process.env.NEV){
+  require("zone.js/dist/zone-microtask.min");
+
   const ngCore = require("angular2/core");
   ngCore.enableProdMode();
 }
+else {
 
-// Angular 2
-import "angular2/platform/browser"
-import "angular2/platform/common_dom"
-import "angular2/router"
-import "angular2/http"
-import "angular2/core"
+  Error['stackTraceLimit'] = Infinity;
 
-// RxJS
-import "rxjs"
-import "jquery"
+  require("zone.js/dist/zone-microtask");
+  require("zone.js/dist/long-stack-trace-zone");
+}
+

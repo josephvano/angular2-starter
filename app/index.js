@@ -10,7 +10,7 @@ import favicon      from "serve-favicon";
 import session      from "express-session";
 
 let app = express();
-const www = path.resolve(__dirname, "../", "wwwroot");
+const www = path.resolve(__dirname, "../", "public");
 
 // view setup
 app.set("views", __dirname);

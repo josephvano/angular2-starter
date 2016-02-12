@@ -3,9 +3,9 @@
   "version": "0.0.1",
   "dependencies": {
     "angular2": {
-      "version": "2.0.0-beta.2",
-      "from": "https://registry.npmjs.org/angular2/-/angular2-2.0.0-beta.2.tgz",
-      "resolved": "https://registry.npmjs.org/angular2/-/angular2-2.0.0-beta.2.tgz"
+      "version": "2.0.0-beta.6",
+      "from": "angular2@2.0.0-beta.6",
+      "resolved": "https://registry.npmjs.org/angular2/-/angular2-2.0.0-beta.6.tgz"
     },
     "body-parser": {
       "version": "1.14.2",
@@ -877,9 +877,9 @@
       "resolved": "https://registry.npmjs.org/typescript/-/typescript-1.7.5.tgz"
     },
     "zone.js": {
-      "version": "0.5.10",
-      "from": "https://registry.npmjs.org/zone.js/-/zone.js-0.5.10.tgz",
-      "resolved": "https://registry.npmjs.org/zone.js/-/zone.js-0.5.10.tgz"
+      "version": "0.5.14",
+      "from": "zone.js@0.5.14",
+      "resolved": "https://registry.npmjs.org/zone.js/-/zone.js-0.5.14.tgz"
     }
   }
 }

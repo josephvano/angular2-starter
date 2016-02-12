@@ -2,7 +2,6 @@
   "compilerOptions": {
     "target": "ES5",
     "module": "commonjs",
-    "moduleResolution": "node",
     "sourceMap": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
@@ -13,5 +12,14 @@
     "node_modules",
     "typings/main.d.ts",
     "typings/main"
-  ]
+  ],
+  "filesGlob": [
+    "./app/**.ts",
+    "./app/test/**.ts",
+    "!./node_modules/**/*.ts",
+    "./app/custom_types.d.ts",
+    "typings/browser.d.ts"
+  ],
+  "compileOnSave": false,
+  "buildOnSave" : false
 }
