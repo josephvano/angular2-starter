@@ -1,5 +1,5 @@
 // Polyfills
-import "rxjs/add/operator/map";
+import "rxjs/Rx";
 import "es6-shim"
 
 import "es6-promise"

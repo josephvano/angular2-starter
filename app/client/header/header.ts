@@ -4,7 +4,6 @@ import { Component } from "angular2/core"
   selector: 'custom-header',
   template: `
     <header>
-      <h1>Angular Starter Application</h1>
     </header>
   `
 })

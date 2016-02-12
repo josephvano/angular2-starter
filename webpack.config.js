@@ -5,6 +5,7 @@ module.exports = {
   devtool: "source-map",
   entry: {
     app : "./app/client/main.ts",
+    users : "./app/client/users/usersMain.ts",
     vendor: "./app/client/vendor.ts"
   },
 

@@ -1,11 +1,11 @@
 import { bootstrap } from "angular2/platform/browser"
-import { AppComponent } from "./app/app"
+import { UsersAppComponent } from "./usersApp";
 import { HTTP_PROVIDERS } from "angular2/http";
 
 console.log("Initializing application");
 
 document.addEventListener("DOMContentLoaded", () => {
 
-  bootstrap(AppComponent, [HTTP_PROVIDERS]);
+  bootstrap(UsersAppComponent, [HTTP_PROVIDERS]);
 
 });
